@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your dream bike at Bike Yard - Browse through a variety of premium motorcycles including BMW, Kawasaki, Ducati, and Yamaha models.">
+    <meta name="keywords" content="motorcycles, bikes, BMW, Kawasaki, Ducati, Yamaha, sport bikes, premium bikes">
+    <title>Bike Yard | Find Your Dream Bike</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo" aria-label="Bike Yard Logo">
+                <i class="fas fa-motorcycle"></i>
+                <span class="logo-text">BIKE YARD</span>
+            </div>
+        <nav aria-label="Main Navigation">
+                <button class="menu-toggle" aria-label="Toggle Menu">§
+                    <i class="fas fa-bars"></i>
+                </button>
+            <ul class="nav-links">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="bikes.html"><i class="fas fa-motorcycle"></i> Bikes</a></li>
+                    <li><a href="collection.html"><i class="fas fa-images"></i> Collection</a></li>
+                    
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+            <div class="header-actions">
+                <button class="btn-login">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Find Your Dream Bike</h1>
+                <p>Discover premium motorcycles from top brands. Your perfect ride awaits.</p>
+                <div class="search-box" role="search">
+                    <label for="search" class="visually-hidden">Search for your dream bike</label>
+                    <input type="text" id="search" placeholder="Search by brand, model, or type...">
+                    <button onclick="searchBike()" aria-label="Search for Bike">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Bikes Section -->
+        <section class="popular-bikes" aria-labelledby="popular-bikes-title">
+            <h2 id="popular-bikes-title">Popular Bikes</h2>
+            <div class="bikes-container">
+                <article class="bike-card">
+                    <img src="images/bmw.jpeg" alt="BMW S1000RR" class="bike-image">
+                    <div class="bike-info">
+                        <h3>BMW S1000RR</h3>
+                        <p>A high-performance sportbike with advanced features and cutting-edge technology.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 205 HP</span>
+                            <span><i class="fas fa-weight"></i> 197 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view"></button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/kawasaki.jpg" alt="Kawasaki Ninja H2" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Kawasaki Ninja H2</h3>
+                        <p>A supercharged beast that delivers unmatched power and precision.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 231 HP</span>
+                            <span><i class="fas fa-weight"></i> 238 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/ducati.jpg" alt="Ducati Panigale V4" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Ducati Panigale V4</h3>
+                        <p>An Italian masterpiece combining style, power, and racing heritage.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 214 HP</span>
+                            <span><i class="fas fa-weight"></i> 195 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/yamaha.jpg" alt="Yamaha R1" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Yamaha R1</h3>
+                        <p>A perfect blend of power, agility, and track-ready performance.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 200 HP</span>
+                            <span><i class="fas fa-weight"></i> 199 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/honda.jpg" alt="Honda CBR1000RR-R" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Honda CBR1000RR-R</h3>
+                        <p>Japanese engineering excellence with MotoGP-inspired technology.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 217 HP</span>
+                            <span><i class="fas fa-weight"></i> 201 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/triumph.avif" alt="Triumph Speed Triple" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Triumph Speed Triple</h3>
+                        <p>British muscle meets modern technology in this naked sportbike.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 150 HP</span>
+                            <span><i class="fas fa-weight"></i> 189 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/ktm.jpeg" alt="KTM 1290 Super Duke R" class="bike-image">
+                    <div class="bike-info">
+                        <h3>KTM 1290 Super Duke R</h3>
+                        <p>The Beast - A powerful naked bike with aggressive styling.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 180 HP</span>
+                            <span><i class="fas fa-weight"></i> 189 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="bike-card">
+                    <img src="images/apriliarsv4.webp" alt="Aprilia RSV4" class="bike-image">
+                    <div class="bike-info">
+                        <h3>Aprilia RSV4</h3>
+                        <p>Italian racing DNA with advanced electronics and superb handling.</p>
+                        <div class="bike-specs">
+                            <span><i class="fas fa-tachometer-alt"></i> 217 HP</span>
+                            <span><i class="fas fa-weight"></i> 199 kg</span>
+                        </div>
+                        <div class="bike-actions">
+                            <button class="btn-view">View Details</button>
+                            <button class="btn-locate">Locate Us</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" aria-labelledby="features-title">
+            <div class="features-header">
+                <h2 id="features-title">Why Choose Us</h2>
+                <p class="features-subtitle">Experience excellence in every aspect of our service</p>
+            </div>
+            <div class="features-container">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quality Assurance</h3>
+                        <p>All bikes undergo rigorous quality checks and meet international standards. We ensure your safety and satisfaction with every purchase.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> 100-Point Quality Check</li>
+                            <li><i class="fas fa-check"></i> Certified Technicians</li>
+                            <li><i class="fas fa-check"></i> Warranty Coverage</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Expert Service</h3>
+                        <p>Our team of skilled technicians provides top-notch maintenance and support for your motorcycle.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Regular Maintenance</li>
+                            <li><i class="fas fa-check"></i> Emergency Support</li>
+                            <li><i class="fas fa-check"></i> Genuine Parts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Trusted Dealership</h3>
+                        <p>With years of experience and thousands of satisfied customers, we're your trusted partner in finding the perfect bike.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Transparent Pricing</li>
+                            <li><i class="fas fa-check"></i> Financing Options</li>
+                            <li><i class="fas fa-check"></i> After-sale Support</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Community Focus</h3>
+                        <p>Join our growing community of passionate riders and enthusiasts.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Regular Meetups</li>
+                            <li><i class="fas fa-check"></i> Riding Events</li>
+                            <li><i class="fas fa-check"></i> Expert Workshops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="features-cta">
+                <p>Ready to experience the difference?</p>
+                <button class="btn-primary">Contact Us Today</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@bikeyard.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p>&copy; 2025 Bike Yard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

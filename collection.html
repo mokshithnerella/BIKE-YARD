@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our stunning collection of motorcycles at Bike Yard">
+    <meta name="keywords" content="motorcycle collection, bike gallery, premium bikes, motorcycle showcase">
+    <title>Collection | Bike Yard</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo" aria-label="Bike Yard Logo">
+                <i class="fas fa-motorcycle"></i>
+                <span class="logo-text">BIKE YARD</span>
+            </div>
+            <nav aria-label="Main Navigation">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="bikes.html"><i class="fas fa-motorcycle"></i> Bikes</a></li>
+                    <li><a href="collection.html" class="active"><i class="fas fa-images"></i> Collection</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-login">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Our Collection</h1>
+            <p>Browse through our stunning gallery of premium motorcycles</p>
+        </section>
+
+        <!-- Gallery Controls -->
+        <section class="gallery-controls">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="sport">Sport</button>
+                <button class="filter-btn" data-filter="naked">Naked</button>
+                <button class="filter-btn" data-filter="adventure">Adventure</button>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-grid">
+            <!-- Sport Bikes -->
+            <div class="gallery-item sport">
+                <img src="images/bmw.jpeg" alt="BMW S1000RR">
+                <div class="gallery-overlay">
+                    <h3>BMW S1000RR</h3>
+                    <p>₹16.60 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item sport">
+                <img src="images/ducati.jpg" alt="Ducati Panigale V4">
+                <div class="gallery-overlay">
+                    <h3>Ducati Panigale V4</h3>
+                    <p>₹19.92 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item sport">
+                <img src="images/yamaha.jpg" alt="Yamaha R1">
+                <div class="gallery-overlay">
+                    <h3>Yamaha R1</h3>
+                    <p>₹14.94 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <!-- Naked Bikes -->
+            <div class="gallery-item naked">
+                <img src="images/ktm.jpeg" alt="KTM 1290 Super Duke R">
+                <div class="gallery-overlay">
+                    <h3>KTM 1290 Super Duke R</h3>
+                    <p>₹15.77 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item naked">
+                <img src="images/streetfighter.webp" alt="Ducati Streetfighter V4">
+                <div class="gallery-overlay">
+                    <h3>Ducati Streetfighter V4</h3>
+                    <p>₹19.09 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item naked">
+                <img src="images/mt10.jpg" alt="Yamaha MT-10">
+                <div class="gallery-overlay">
+                    <h3>Yamaha MT-10</h3>
+                    <p>₹14.61 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <!-- Adventure Bikes -->
+            <div class="gallery-item adventure">
+                <img src="images/bmw-gs.jpg" alt="BMW R1250GS Adventure">
+                <div class="gallery-overlay">
+                    <h3>BMW R1250GS Adventure</h3>
+                    <p>₹17.43 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item adventure">
+                <img src="images/multistrada.avif" alt="Ducati Multistrada V4">
+                <div class="gallery-overlay">
+                    <h3>Ducati Multistrada V4</h3>
+                    <p>₹20.75 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item adventure">
+                <img src="images/africa-twin.jpg" alt="Honda Africa Twin">
+                <div class="gallery-overlay">
+                    <h3>Honda Africa Twin</h3>
+                    <p>₹15.77 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <!-- Additional Sport Bikes -->
+            <div class="gallery-item sport">
+                <img src="images/ninja-zx10r.jpg" alt="Kawasaki Ninja ZX-10R">
+                <div class="gallery-overlay">
+                    <h3>Kawasaki Ninja ZX-10R</h3>
+                    <p>₹14.11 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item sport">
+                <img src="images/rsv4.avif" alt="Aprilia RSV4">
+                <div class="gallery-overlay">
+                    <h3>Aprilia RSV4</h3>
+                    <p>₹21.58 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item sport">
+                <img src="images/cbr1000rr.webp" alt="Honda CBR1000RR-R">
+                <div class="gallery-overlay">
+                    <h3>Honda CBR1000RR-R</h3>
+                    <p>₹23.66 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <!-- Additional Naked Bikes -->
+            <div class="gallery-item naked">
+                <img src="images/s1000r.jpg" alt="BMW S1000R">
+                <div class="gallery-overlay">
+                    <h3>BMW S1000R</h3>
+                    <p>₹16.60 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item naked">
+                <img src="images/brutale.webp" alt="MV Agusta Brutale 1000">
+                <div class="gallery-overlay">
+                    <h3>MV Agusta Brutale 1000</h3>
+                    <p>₹26.50 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item naked">
+                <img src="images/cb1000r.jpg" alt="Honda CB1000R">
+                <div class="gallery-overlay">
+                    <h3>Honda CB1000R</h3>
+                    <p>₹14.85 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <!-- Additional Adventure Bikes -->
+            <div class="gallery-item adventure">
+                <img src="images/tiger1200.avif" alt="Triumph Tiger 1200">
+                <div class="gallery-overlay">
+                    <h3>Triumph Tiger 1200</h3>
+                    <p>₹18.26 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item adventure">
+                <img src="images/tenere700.jpg" alt="Yamaha Ténéré 700">
+                <div class="gallery-overlay">
+                    <h3>Yamaha Ténéré 700</h3>
+                    <p>₹14.11 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item adventure">
+                <img src="images/v-strom.jpg" alt="Suzuki V-Strom 1050">
+                <div class="gallery-overlay">
+                    <h3>Suzuki V-Strom 1050</h3>
+                    <p>₹13.90 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item naked">
+                <img src="images/z1000.avif" alt="Kawasaki Z1000">
+                <div class="gallery-overlay">
+                    <h3>Kawasaki Z1000</h3>
+                    <p>₹15.25 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <!-- Additional Sport and Adventure Bikes -->
+            <div class="gallery-item sport">
+                <img src="images/zx6r.png" alt="Kawasaki Ninja ZX-6R">
+                <div class="gallery-overlay">
+                    <h3>Kawasaki Ninja ZX-6R</h3>
+                    <p>₹11.99 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item adventure">
+                <img src="images/ktm890.webp" alt="KTM 890 Adventure R">
+                <div class="gallery-overlay">
+                    <h3>KTM 890 Adventure R</h3>
+                    <p>₹12.75 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item sport">
+                <img src="images/gsxr1000.jpg" alt="Suzuki GSX-R1000R">
+                <div class="gallery-overlay">
+                    <h3>Suzuki GSX-R1000R</h3>
+                    <p>₹17.85 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item naked">
+                <img src="images/monster.jpeg" alt="Ducati Monster">
+                <div class="gallery-overlay">
+                    <h3>Ducati Monster</h3>
+                    <p>₹13.45 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+
+            <div class="gallery-item adventure">
+                <img src="images/norden901.jpg" alt="Husqvarna Norden 901">
+                <div class="gallery-overlay">
+                    <h3>Husqvarna Norden 901</h3>
+                    <p>₹13.95 Lakhs</p>
+                    <button class="btn-view">View Details</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@bikeyard.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bike Yard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

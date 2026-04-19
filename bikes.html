@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our extensive collection of premium motorcycles at Bike Yard">
+    <meta name="keywords" content="motorcycles, bikes, BMW, Kawasaki, Ducati, Yamaha, sport bikes, premium bikes">
+    <title>Our Bikes | Bike Yard</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo" aria-label="Bike Yard Logo">
+                <i class="fas fa-motorcycle"></i>
+                <span class="logo-text">BIKE YARD</span>
+            </div>
+            <nav aria-label="Main Navigation">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="bikes.html" class="active"><i class="fas fa-motorcycle"></i> Bikes</a></li>
+                    <li><a href="collection.html"><i class="fas fa-images"></i> Collection</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+            <div class="header-actions">
+                <button class="btn-login">
+                    <i class="fas fa-user"></i>
+                    <span>Login</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+        <!-- Filters Section -->
+        <section class="filter-section">
+            <h2>Explore our extensive collection of premium motorcycles</h2>
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="brand">Brand</label>
+                    <select id="brand" name="brand">
+                        <option value="all">All Brands</option>
+                        <option value="bmw">BMW</option>
+                        <option value="ducati">Ducati</option>
+                        <option value="honda">Honda</option>
+                        <option value="kawasaki">Kawasaki</option>
+                        <option value="ktm">KTM</option>
+                        <option value="yamaha">Yamaha</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type">Type</label>
+                    <select id="type" name="type">
+                        <option value="all">All Types</option>
+                        <option value="sport">Sport</option>
+                        <option value="naked">Naked</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="cruiser">Cruiser</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Price Range</label>
+                    <div class="price-range">
+                        <input type="range" id="price-range" min="415000" max="4150000" step="83000" value="2282500">
+                        <span>₹4.15 Lakhs - ₹41.50 Lakhs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bikes Grid Section -->
+        <section class="bikes-grid">
+            <!-- Sport Bikes -->
+            <div class="category-section">
+                <h2>Sport Bikes</h2>
+                <div class="bikes-container">
+                    <div class="bike-card">
+                        <img src="images/bmw.jpeg" alt="BMW S1000RR" class="bike-image">
+                        <div class="bike-info">
+                            <h3>BMW S1000RR</h3>
+                            <p class="bike-price">₹16.60 Lakhs</p>
+                            <p>A high-performance sportbike with advanced features and cutting-edge technology.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 205 HP</span>
+                                <span><i class="fas fa-weight"></i> 197 kg</span>
+                                <span><i class="fas fa-road"></i> Sport</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/ducati.jpg" alt="Ducati Panigale V4" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Ducati Panigale V4</h3>
+                            <p class="bike-price">₹19.92 Lakhs</p>
+                            <p>Italian racing DNA with advanced electronics and superb handling.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 214 HP</span>
+                                <span><i class="fas fa-weight"></i> 195 kg</span>
+                                <span><i class="fas fa-road"></i> Sport</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/yamaha.jpg" alt="Yamaha R1" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Yamaha R1</h3>
+                            <p class="bike-price">₹14.94 Lakhs</p>
+                            <p>A perfect blend of power, agility, and track-ready performance.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 200 HP</span>
+                                <span><i class="fas fa-weight"></i> 199 kg</span>
+                                <span><i class="fas fa-road"></i> Sport</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/ninja-zx10r.jpg" alt="Kawasaki Ninja ZX-10R" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Kawasaki Ninja ZX-10R</h3>
+                            <p class="bike-price">₹14.11 Lakhs</p>
+                            <p>World Superbike Championship winning performance for the street.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 203 HP</span>
+                                <span><i class="fas fa-weight"></i> 207 kg</span>
+                                <span><i class="fas fa-road"></i> Sport</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/apriliarsv4.webp" alt="Aprilia RSV4 Factory" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Aprilia RSV4 Factory</h3>
+                            <p class="bike-price">₹21.58 Lakhs</p>
+                            <p>Italian excellence with racing technology and stunning design.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 217 HP</span>
+                                <span><i class="fas fa-weight"></i> 202 kg</span>
+                                <span><i class="fas fa-road"></i> Sport</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/honda.jpg" alt="Honda CBR1000RR-R" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Honda CBR1000RR-R</h3>
+                            <p class="bike-price">₹23.66 Lakhs</p>
+                            <p>The ultimate expression of Honda racing technology.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 215 HP</span>
+                                <span><i class="fas fa-weight"></i> 201 kg</span>
+                                <span><i class="fas fa-road"></i> Sport</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Naked Bikes -->
+            <div class="category-section">
+                <h2>Naked Bikes</h2>
+                <div class="bikes-container">
+                    <div class="bike-card">
+                        <img src="images/ktm.jpeg" alt="KTM 1290 Super Duke R" class="bike-image">
+                        <div class="bike-info">
+                            <h3>KTM 1290 Super Duke R</h3>
+                            <p class="bike-price">₹15.77 Lakhs</p>
+                            <p>The Beast - A powerful naked bike with aggressive styling.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 180 HP</span>
+                                <span><i class="fas fa-weight"></i> 189 kg</span>
+                                <span><i class="fas fa-road"></i> Naked</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/triumph.avif" alt="Triumph Street Triple RS" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Triumph Street Triple RS</h3>
+                            <p class="bike-price">₹14.11 Lakhs</p>
+                            <p>British engineering meets street performance.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 123 HP</span>
+                                <span><i class="fas fa-weight"></i> 166 kg</span>
+                                <span><i class="fas fa-road"></i> Naked</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/kawasaki.jpg" alt="Kawasaki Z900" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Kawasaki Z900</h3>
+                            <p class="bike-price">₹13.28 Lakhs</p>
+                            <p>Raw power meets refined street performance.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 125 HP</span>
+                                <span><i class="fas fa-weight"></i> 212 kg</span>
+                                <span><i class="fas fa-road"></i> Naked</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/streetfighter.webp" alt="Ducati Streetfighter V4" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Ducati Streetfighter V4</h3>
+                            <p class="bike-price">₹19.09 Lakhs</p>
+                            <p>The ultimate naked bike with superbike performance.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 208 HP</span>
+                                <span><i class="fas fa-weight"></i> 197 kg</span>
+                                <span><i class="fas fa-road"></i> Naked</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/s1000r.jpg" alt="BMW S1000R" class="bike-image">
+                        <div class="bike-info">
+                            <h3>BMW S1000R</h3>
+                            <p class="bike-price">₹16.60 Lakhs</p>
+                            <p>German engineering in its most aggressive form.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 165 HP</span>
+                                <span><i class="fas fa-weight"></i> 199 kg</span>
+                                <span><i class="fas fa-road"></i> Naked</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/mt10.jpg" alt="Yamaha MT-10" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Yamaha MT-10</h3>
+                            <p class="bike-price">₹14.61 Lakhs</p>
+                            <p>The dark side of Japan with R1 performance.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 160 HP</span>
+                                <span><i class="fas fa-weight"></i> 214 kg</span>
+                                <span><i class="fas fa-road"></i> Naked</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adventure Bikes -->
+            <div class="category-section">
+                <h2>Adventure Bikes</h2>
+                <div class="bikes-container">
+                    <div class="bike-card">
+                        <img src="images/bmw-gs.jpg" alt="BMW R1250GS Adventure" class="bike-image">
+                        <div class="bike-info">
+                            <h3>BMW R1250GS Adventure</h3>
+                            <p class="bike-price">₹17.43 Lakhs</p>
+                            <p>The ultimate adventure touring machine.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 136 HP</span>
+                                <span><i class="fas fa-weight"></i> 249 kg</span>
+                                <span><i class="fas fa-road"></i> Adventure</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/ktm-adv.jpeg" alt="KTM 1290 Super Adventure" class="bike-image">
+                        <div class="bike-info">
+                            <h3>KTM 1290 Super Adventure</h3>
+                            <p class="bike-price">₹16.60 Lakhs</p>
+                            <p>Ready for any adventure, on or off-road.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 160 HP</span>
+                                <span><i class="fas fa-weight"></i> 238 kg</span>
+                                <span><i class="fas fa-road"></i> Adventure</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/multistrada.avif" alt="Ducati Multistrada V4" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Ducati Multistrada V4</h3>
+                            <p class="bike-price">₹20.75 Lakhs</p>
+                            <p>Italian sophistication meets adventure capability.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 170 HP</span>
+                                <span><i class="fas fa-weight"></i> 243 kg</span>
+                                <span><i class="fas fa-road"></i> Adventure</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/tiger1200.avif" alt="Triumph Tiger 1200" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Triumph Tiger 1200</h3>
+                            <p class="bike-price">₹18.26 Lakhs</p>
+                            <p>British adventure with comfort and capability.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 148 HP</span>
+                                <span><i class="fas fa-weight"></i> 245 kg</span>
+                                <span><i class="fas fa-road"></i> Adventure</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/africa-twin.jpg" alt="Honda Africa Twin" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Honda Africa Twin</h3>
+                            <p class="bike-price">₹15.77 Lakhs</p>
+                            <p>True adventure with legendary reliability.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 101 HP</span>
+                                <span><i class="fas fa-weight"></i> 226 kg</span>
+                                <span><i class="fas fa-road"></i> Adventure</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bike-card">
+                        <img src="images/tenere700.jpg" alt="Yamaha Ténéré 700" class="bike-image">
+                        <div class="bike-info">
+                            <h3>Yamaha Ténéré 700</h3>
+                            <p class="bike-price">₹14.11 Lakhs</p>
+                            <p>Rally-bred adventure for all terrains.</p>
+                            <div class="bike-specs">
+                                <span><i class="fas fa-tachometer-alt"></i> 72 HP</span>
+                                <span><i class="fas fa-weight"></i> 204 kg</span>
+                                <span><i class="fas fa-road"></i> Adventure</span>
+                            </div>
+                            <div class="bike-actions">
+                                <button class="btn-view">View Details</button>
+                                <button class="btn-book">Book Test Ride</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@bikeyard.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bike Yard. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
